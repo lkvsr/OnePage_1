@@ -1,3 +1,9 @@
+/* glob */
+:root {
+  --main-font: 'OpenSans', sans-serif;
+
+}
+
 html {
   box-sizing: border-box;
 }
@@ -18,19 +24,20 @@ img {
 }
 
 body {
-  min-width: 1200px;
-  font-family: "OpenSans", sans-serif;
+  font-family: var(--main-font);
   font-weight: 400;
 }
 
-/* glob */
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+}
 
 .flex {
   display: flex;
 }
 
 .container {
-  width: 1200px;
+  max-width: 1550px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -76,7 +83,7 @@ body {
   transition: opacity 0.3s ease-in-out;
 }
 
-.btn:focus::after {
+.btn:focus-visible::after {
   opacity: 1;
 }
 
@@ -228,6 +235,8 @@ body {
   background-position: left center;
   background-size: 14px 17px;
   background-repeat: no-repeat;
+  pointer-events: none;
+  user-select: none;
 }
 
 /* services */
@@ -241,6 +250,10 @@ body {
 
 .services-descr {
   text-align: center;
+}
+
+.services-list {
+  justify-content: center;
 }
 
 .services-item {
