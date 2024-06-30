@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blanchard</title>
+  <link rel="shortcut icon" href="favicon.png">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__content">
+        <a class="header__home" href="index.html">
+          <picture class="logo-picture">
+            <source srcset="img/header-logo-1024.svg" media="(min-width:520px) and (max-width: 1025px)">
+            <source srcset="img/header-logo-320.svg" media="(min-width: 320px) and (max-width: 519px)">
+            <img class="header__logo" src="img/header-logo.svg" alt="Логотип Blanchard">
+          </picture>
+        </a>
+        <nav class="header__nav">
+          <ul class="header__list list-reset">
+            <li class="header__item"><a href="#about" class="header__link">О нас</a></li>
+            <li class="header__item"><a href="#gallery" class="header__link">Галерея</a></li>
+            <li class="header__item"><a href="#catalog" class="header__link">Каталог</a></li>
+            <li class="header__item"><a href="#events" class="header__link">События</a></li>
+            <li class="header__item"><a href="#projects" class="header__link">Проекты</a></li>
+            <li class="header__item"><a href="#contacts" class="header__link">Контакты</a></li>
+          </ul>
+        </nav>
+        <button class="header__search btn-reset" aria-label="Поиск по сайту">
+          <svg class="search-btn" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect class="header-svg" width="8.79564" height="2.19891" transform="matrix(-0.711314 0.702874 0.711314 0.702874 6.25647 20.2722)" fill="white"/>
+            <path class="header-svg" fill-rule="evenodd" clip-rule="evenodd" d="M15.3286 23.3112C9.54218 23.3112 5.06477 18.549 5.06477 12.9507C5.06477 7.35228 9.54218 2.59013 15.3286 2.59013C21.115 2.59013 25.5924 7.35228 25.5924 12.9507C25.5924 18.549 21.115 23.3112 15.3286 23.3112ZM15.3286 25.9013C8.33038 25.9013 2.6572 20.1031 2.6572 12.9507C2.6572 5.79821 8.33038 0 15.3286 0C22.3268 0 28 5.79821 28 12.9507C28 20.1031 22.3268 25.9013 15.3286 25.9013Z" fill="white"/>
+            </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero section-offset">
+      <div class="container">
+        <div class="hero__content">
+          <h1 class="hero__title title">Прикоснитесь к&nbsp;прекрасному</h1>
+          <p class="hero__subtitle">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений</p>
+          <form action="#subscribe">
+            <button class="hero__btn btn btn-reset">Подписаться на рассылку</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="about section-offset" id="about">
+      <div class="container">
+        <h2 class="title">О&nbsp;нас</h2>
+        <p class="section-descr descr about-descr">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечёт за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определённых слоёв населения, а значит, должны быть разоблачены.</p>
+      </div>
+    </section>
+    <section class="gallery section-offset" id="gallery">
+      <div class="container">
+        <h2 class="title title-dark">Галерея</h2>
+        <div class="gallery__content">
+          <div class="gallery__switcher">
+            <label class="switch-label" for="XIX" >
+              <input class="gallery__switch" type="radio" id="XIX" name="stage" value="XIX">
+              <span class="switch-text">XIX век</span>
+            </label>
+            <label class="switch-label" for="XX" >
+              <input class="gallery__switch" type="radio" id="XX" name="stage" value="XX" checked>
+              <span class="switch-text">XX век</span>
+            </label>
+            <label class="switch-label" for="modern" >
+              <input class="gallery__switch" type="radio" id="modern" name="stage" value="modern">
+              <span class="switch-text">Современность</span>
+            </label>
+          </div>
+          <div class="gallery__showing">
+            <picture class="gallery__pic">
+              <source srcset="img/gallery-1-320.jpg" media="(max-width: 767px)">
+              <source srcset="img/gallery-1-768.jpg" media="(max-width: 992px)">
+              <source srcset="img/gallery-1-1024.jpg" media="(max-width: 1400px)">
+              <img src="img/gallery-pic-1-1920.jpg" alt="Картина 1">
+            </picture>
+            <picture class="gallery__pic">
+              <source srcset="img/gallery-2-320.jpg" media="(max-width: 767px)">
+              <source srcset="img/gallery-2-768.jpg" media="(max-width: 992px)">
+              <source srcset="img/gallery-2-1024.jpg" media="(max-width: 1400px)">
+              <img src="img/gallery-pic-2-1920.jpg" alt="Картина 2">
+            </picture>
+            <picture class="gallery__pic">
+              <source srcset="img/gallery-3-320.jpg" media="(max-width: 767px)">
+              <source srcset="img/gallery-3-768.jpg" media="(max-width: 992px)">
+              <source srcset="img/gallery-3-1024.jpg" media="(max-width: 1400px)">
+              <img src="img/gallery-pic-3-1920.jpg" alt="Картина 3">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="catalog section-offset" id="catalog">
+      <div class="container">
+          <h2 class="title">Каталог</h2>
+          <p class="section-descr catalog-descr descr">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.</p>
+          <ul class="catalog__list list-reset">
+            <li class="catalog__item">
+              <picture class="item-picture">
+                <source srcset="img/catalog-1-320.jpg" media="(max-width: 767px)">
+                <source srcset="img/catalog-1-768.jpg" media="(max-width: 992px)">
+                <source srcset="img/catalog-1-1024.jpg" media="(max-width: 1400px)">
+                <img class="catalog__pic" src="img/catalog-1-1920.jpg" alt="Доменико Гирландайо">
+              </picture>
+              <div class="catalog__item-textbox">
+                <h3 class="catalog-name">Доменико Гирландайо</h3>
+                <p class="date-place">2 июня 1448-11 января 1494</p>
+                <p class="catalog-info descr">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <picture class="item-picture">
+                <source srcset="img/catalog-2-320.jpg" media="(max-width: 767px)">
+                <source srcset="img/catalog-2-768.jpg" media="(max-width: 992px)">
+                <source srcset="img/catalog-2-1024.jpg" media="(max-width: 1400px)">
+                <img class="catalog__pic" src="img/catalog-2-1920.jpg" alt="Андреа дель Верроккьо">
+              </picture>
+              <div class="catalog__item-textbox">
+                <h3 class="catalog-name">Андреа дель Верроккьо</h3>
+                <p class="date-place">1435-10 октября 1488</p>
+                <p class="catalog-info descr">Творческий путь молодого Андреа, как и многих знаменитых художников и скульпторов эпохи Возрождения, начался с обучения и работы в одной из ювелирных мастерских Флоренции. Там он занимался не только изготовлением драгоценных украшений, но и познавал основы живописи, пластики и архитектуры. Его первым учителем был Джулиано Веррокки, фамилию которого в несколько изменённом виде Андреа заимствовал для своего будущего псевдонима.</p>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <picture class="item-picture">
+                <source srcset="img/catalog-3-320.jpg" media="(max-width: 767px)">
+                <source srcset="img/catalog-3-768.jpg" media="(max-width: 992px)">
+                <source srcset="img/catalog-3-1024.jpg" media="(max-width: 1400px)">
+                <img class="catalog__pic" src="img/catalog-3-1920.jpg" alt="Лоренцо ди Креди">
+              </picture>
+              <div class="catalog__item-textbox">
+                <h3 class="catalog-name">Лоренцо ди Креди</h3>
+                <p class="date-place">1459-12 января 1537</p>
+                <p class="catalog-info descr">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+              </div>
+            </li>
+          </ul>
+      </div>
+    </section>
+    <section class="events section-offset" id="events">
+      <div class="container">
+        <h2 class="title">События</h2>
+        <ul class="events__list list-reset">
+          <li class="events__item">
+            <picture class="events__cover">
+              <source srcset="img/events-1-320.jpg" media="(max-width: 767px)">
+              <source srcset="img/events-1-768.jpg" media="(max-width: 992px)">
+              <source srcset="img/events-1-1024.jpg" media="(max-width: 1400px)">
+              <img class="events-pic" src="img/events-1-1920.jpg" alt="">
+            </picture>
+            <div class="events__textbox">
+              <div class="place-time">
+              <span class="date-place events-date">Музей им. Щусева</span>
+              <p class="date-place events-date">с 20 марта по 30 апреля</p></div>
+              <h3 class="item-title">Книжная гравюра в живом восприятии</h3>
+              <p class="item-descr descr">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо</p>
+              <a class="more-link" href="#">Подробнее</a>
+            </div>
+          </li>
+          <li class="events__item">
+            <picture class="events__cover">
+              <source srcset="img/events-2-320.jpg" media="(max-width: 767px)">
+              <source srcset="img/events-2-768.jpg" media="(max-width: 992px)">
+              <source srcset="img/events-2-1024.jpg" media="(max-width: 1400px)">
+              <img class="events-pic" src="img/events-2-1920.jpg" alt="">
+            </picture>
+            <div class="events__textbox">
+              <div class="place-time">
+              <span class="date-place events-date">ММОМА</span>
+              <time class="date-place events-date" datetime="2024-03-24T19:00+03:00">24 марта 19:00</time></div>
+              <h3 class="item-title">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
+              <p class="item-descr descr">Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого факта</p>
+              <a class="more-link" href="#">Подробнее</a>
+            </div>
+          </li>
+          <li class="events__item">
+            <picture class="events__cover">
+              <source srcset="img/events-3-320.jpg" media="(max-width: 767px)">
+              <source srcset="img/events-3-768.jpg" media="(max-width: 992px)">
+              <source srcset="img/events-3-1024.jpg" media="(max-width: 1400px)">
+              <img class="events-pic" src="img/events-3-1920.jpg" alt="">
+            </picture>
+            <div class="events__textbox">
+              <div class="place-time">
+              <span class="date-place events-date">Еврейский музей</span>
+              <p class="date-place events-date">с 31 марта по 21 апреля</p></div>
+              <h3 class="item-title">Выставка «Формация 2020»</h3>
+              <p class="item-descr descr">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений</p>
+              <a class="more-link" href="#">Подробнее</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="projects section-offset" id="projects">
+      <div class="container">
+        <h2 class="title">Проекты</h2>
+        <p class="section-descr projects-descr descr">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершённой неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершённой неузнаваемости.</p>
+        <h3 class="item-title partners-title">Партнёры проектов:</h3>
+        <ul class="projects__list list-reset">
+          <li class="projects__item">
+            <img class="projects-logo" src="img/partner-1.png" alt="Фонд Свободные Земли">
+          </li>
+          <li class="projects__item">
+            <img class="projects-logo" src="img/partner-2.png" alt="Институт Современного Искусства">
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="contacts section-offset" id="contacts">
+      <div class="container">
+        <div class="contacts__content">
+          <address class="adress" aria-label="Наш адрес">
+            <span class="adress-name">Шоурум № 4</span>
+            <span class="adress-place">Леонтьевский переулок, дом 5/1</span>
+          </address>
+          <form class="form" id="subscribe" action="https://jsonplaceholder.typicode.com/posts" method="post">
+              <div class="invalid-sign-wrapper">
+                <input class="contacts__input input-name" type="text" name="name" placeholder="Имя*" pattern="[A-Za-zА-Яа-яЁё]{2,20}" title="Введите Ваше имя" required>
+                <div class="invalid-sign-maker"></div>
+              </div>
+              <div class="invalid-sign-wrapper">
+                <input class="contacts__input input-tel" type="tel" name="tel" placeholder="Телефон*" pattern="\+?[0-9\s\-\(\)]+" title="Введите Ваш номер телефона" required>
+                <div class="invalid-sign-maker"></div>
+              </div>
+            <button class="form-btn btn btn-reset desktop-form-btn" type="submit">Заказать обратный звонок</button>
+            <button class="form-btn btn btn-reset mobile-form-btn" type="submit">Заказать</button>
+          </form>
+          <div class="contacts__socials">
+            <h3 class="item-title socials-title">Связаться в один клик</h3>
+            <ul class="socials-list list-reset">
+              <li class="socials-item">
+                <a class="contacts-link" href="https://wa.me/+79256219075" aria-label="Связаться Вотсап">
+                  <svg class="contacts-link-icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_191243_1048)">
+                <path class="socials-svg" d="M25 49.2188C38.3756 49.2188 49.2188 38.3756 49.2188 25C49.2188 11.6244 38.3756 0.78125 25 0.78125C11.6244 0.78125 0.78125 11.6244 0.78125 25C0.78125 38.3756 11.6244 49.2188 25 49.2188Z" fill="#30BF39"/>
+                <path class="socials-svg" d="M32.3438 27.1885C32.0313 27.0322 30.3906 26.0947 30.0781 26.0166C29.7656 25.8603 29.5313 25.8603 29.2969 26.1728C29.0625 26.4853 28.3594 27.2666 28.2031 27.4228C27.9688 27.6572 27.8125 27.6572 27.5 27.501C27.1875 27.3447 26.0938 26.9541 24.8438 25.7041C23.9063 24.7666 23.2031 23.6728 23.0469 23.2822C22.8906 22.9697 23.0469 22.7353 23.2031 22.5791C23.3594 22.4228 23.5156 22.1885 23.75 22.0322C23.9844 21.876 23.9844 21.7197 24.1406 21.4854C24.2969 21.251 24.2188 21.0947 24.1406 20.8604C24.0625 20.626 23.4375 18.9854 23.2031 18.2822C22.9688 17.5791 22.6563 17.7354 22.5 17.6572C22.2656 17.6572 22.1094 17.5791 21.875 17.5791C21.5625 17.5791 21.1719 17.7354 20.9375 17.9697C20.625 18.2822 19.6875 19.0635 19.6875 20.7041C19.6875 22.3447 20.7813 24.0635 20.9375 24.2197C21.0938 24.4541 23.125 28.0478 26.4844 29.5322C29.8438 31.0166 29.8438 30.5478 30.4688 30.5478C31.0938 30.5478 32.5 29.7666 32.8125 29.0635C33.125 28.2822 33.125 27.5791 33.0469 27.501C32.8906 27.501 32.6563 27.4228 32.3438 27.1885ZM26.0938 35.2353C23.9063 35.2353 21.875 34.6103 20.0781 33.4385L15.8594 34.7666L17.2656 30.7041C15.9375 28.8291 15.1562 26.5635 15.1562 24.2197C15.1562 18.126 20.0781 13.2041 26.1719 13.2041C32.2656 13.2041 37.1094 18.126 37.1094 24.2197C37.1094 30.3135 32.1875 35.2353 26.0938 35.2353ZM26.0938 11.0166C18.8281 11.0166 12.8906 16.9541 12.8906 24.2197C12.8906 26.6416 13.5156 28.9853 14.7656 31.0166L12.3438 38.126L19.6875 35.7822C21.6406 36.876 23.8281 37.4229 26.0938 37.4229C33.3594 37.4229 39.2969 31.4853 39.2969 24.2197C39.2969 16.9541 33.4375 11.0166 26.0938 11.0166Z" fill="white"/>
+                </g>
+                <defs>
+                <clippath id="clip0_191243_1048">
+                <rect width="50" height="50" fill="white"/>
+                </clippath>
+                </defs>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-item">
+                <a class="contacts-link" href="https://t.me/lkv96s" aria-label="Связаться Телеграм">
+                  <svg class="contacts-link-icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_191243_1051)">
+                  <path class="socials-svg" d="M25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 0 25 0C11.1929 0 0 11.1929 0 25C0 38.8071 11.1929 50 25 50Z" fill="#26A5E4"/>
+                  <path class="socials-svg" fill-rule="evenodd" clip-rule="evenodd" d="M11.3166 24.7359L25.8961 18.4559C32.8389 15.5681 34.2815 15.0665 35.2218 15.05C35.4287 15.0463 35.8911 15.0976 36.1906 15.3406C36.4436 15.5458 36.5131 15.8231 36.5464 16.0176C36.5798 16.2121 36.6212 16.6555 36.5882 17.0018C36.212 20.9548 34.584 30.548 33.7558 34.9755C33.4053 36.849 32.7158 37.4772 32.0473 37.5386C30.5955 37.6722 29.4931 36.5791 28.0869 35.6574L22.5077 31.9098C20.0394 30.2833 21.6395 29.3893 23.0462 27.9283C23.4143 27.5458 29.811 21.7276 29.9347 21.1998C29.9497 21.1338 29.9646 20.8878 29.8184 20.7578C29.6723 20.6278 29.4564 20.6728 29.3008 20.7076C29.0801 20.7577 25.5651 23.081 18.7557 27.6776C17.7579 28.3628 16.8542 28.6966 16.0445 28.6791C15.1519 28.6598 13.4348 28.1744 12.1584 27.7595C10.5927 27.2506 9.34838 26.9815 9.45678 26.1172C9.51318 25.667 10.1331 25.2067 11.3166 24.736L11.3166 24.7359Z" fill="white"/>
+                  </g>
+                  <defs>
+                  <clippath id="clip0_191243_1051">
+                  <rect class="socials-svg" width="50" height="50" fill="white"/>
+                  </clippath>
+                  </defs>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__content">
+      <a class="footer__home" href="#">
+        <img class="footer__logo" src="img/header-logo.svg" alt="Логотип Blanchard">
+      </a>
+      <ul class="socials-list list-reset">
+        <li class="footer__item">
+          <a class="footer__link" href="https://vk.me/lkv96s" aria-label="Связаться ВК">
+            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="footer-svg" d="M25 0C11.1933 0 0 11.1928 0 25C0 38.8072 11.1933 50 25 50C38.8066 50 50 38.8072 50 25C50 11.1928 38.8066 0 25 0ZM37.6813 27.7038C38.8465 28.8419 40.0793 29.913 41.1253 31.1688C41.5887 31.7243 42.0256 32.2987 42.3581 32.9448C42.8327 33.866 42.4041 34.8762 41.5795 34.9309L36.4578 34.9299C35.135 35.0394 34.0824 34.5059 33.1949 33.6015C32.4864 32.8808 31.8292 32.111 31.1468 31.3657C30.868 31.0598 30.5744 30.7719 30.2246 30.5453C29.5263 30.091 28.9197 30.2302 28.5197 30.9596C28.112 31.7018 28.0189 32.5243 27.9801 33.3504C27.9243 34.5581 27.5601 34.8737 26.3483 34.9304C23.7591 35.0517 21.3023 34.6588 19.0189 33.3535C17.0046 32.202 15.4455 30.577 14.087 28.7371C11.4414 25.1504 9.41535 21.2138 7.59488 17.1642C7.18517 16.2522 7.48491 15.7642 8.49105 15.7453C10.1627 15.713 11.8343 15.7171 13.5059 15.7437C14.1862 15.7545 14.6363 16.1437 14.8977 16.7857C15.801 19.0082 16.9084 21.1228 18.2962 23.0839C18.666 23.6061 19.0435 24.1269 19.5811 24.4957C20.1744 24.9028 20.6266 24.7683 20.9064 24.1059C21.0854 23.6849 21.1627 23.2348 21.2015 22.7836C21.3345 21.2384 21.3504 19.6936 21.1202 18.1545C20.977 17.1913 20.4353 16.5693 19.4752 16.3872C18.9862 16.2946 19.0578 16.1136 19.2957 15.8343C19.7084 15.3514 20.0951 15.0527 20.868 15.0527L26.6547 15.0517C27.5668 15.2307 27.7714 15.6399 27.8951 16.5586L27.9003 22.9893C27.8895 23.3448 28.0788 24.3985 28.7171 24.6312C29.2286 24.8 29.5662 24.3898 29.8721 24.066C31.2598 22.5933 32.2486 20.8552 33.134 19.0563C33.5248 18.2629 33.8619 17.4419 34.1893 16.6194C34.4327 16.0113 34.8113 15.712 35.4977 15.7222L41.0701 15.7289C41.2343 15.7289 41.401 15.7304 41.5637 15.7586C42.5028 15.9192 42.7601 16.3233 42.4696 17.2394C42.0123 18.6788 41.1238 19.8777 40.2552 21.0798C39.3243 22.3668 38.3315 23.6087 37.4097 24.9013C36.5627 26.0829 36.6297 26.6777 37.6813 27.7038Z" fill="#CACACA"/>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="https://ok.me/имя_пользователя" aria-label="Связаться в Одноклассники">
+            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="footer-svg" d="M21.4212 16.651C21.4212 18.7121 23.092 20.3832 25.1532 20.3832C27.2143 20.3832 28.8852 18.7121 28.8852 16.651C28.8852 14.5899 27.2143 12.919 25.1532 12.919C23.092 12.919 21.4212 14.5899 21.4212 16.651Z" fill="#CACACA"/>
+            <path class="footer-svg" fill-rule="evenodd" clip-rule="evenodd" d="M25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 0 25 0C11.1929 0 0 11.1929 0 25C0 38.8071 11.1929 50 25 50ZM16.125 16.6509C16.125 11.6649 20.167 7.62274 25.1532 7.62274C30.1394 7.62274 34.1813 11.6649 34.1813 16.6509C34.1813 21.6371 30.1394 25.6795 25.1532 25.6795C20.167 25.6795 16.125 21.6371 16.125 16.6509ZM34.2353 30.3234C34.1207 30.4152 31.9548 32.1269 28.3404 32.8632L33.7961 38.2703C34.7556 39.2282 34.7567 40.7824 33.7988 41.7419C32.841 42.7012 31.287 42.7027 30.3272 41.7446L25.0307 36.5867L20.2199 41.7114C19.7382 42.211 19.0958 42.4623 18.4526 42.4623C17.8392 42.4623 17.2252 42.234 16.7489 41.7747C15.7729 40.8336 15.7446 39.2796 16.6857 38.3036L21.8641 32.8917C18.1485 32.1727 15.8932 30.4165 15.777 30.3234C14.7194 29.4752 14.5495 27.9302 15.3977 26.8725C16.2458 25.8149 17.7906 25.645 18.8485 26.493C18.8708 26.5111 21.2297 28.2832 25.0305 28.2858C28.8314 28.2832 31.1415 26.5111 31.1638 26.493C32.2217 25.645 33.7665 25.8149 34.6146 26.8725C35.4628 27.9302 35.2929 29.4752 34.2353 30.3234Z" fill="#CACACA"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
