@@ -140,6 +140,156 @@ h1,h2,h3,h4,h5,h6,p {
   --dark-gold: #A47312;
 }
 
+/* burger menu */
+#menuToggle
+{
+  display: block;
+  position: fixed;
+  top: 50px;
+  right: 50px;
+
+  z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: var(--light-gold);
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #cdcdcd;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * The last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ */
+#menu
+{
+  position: absolute;
+  max-width: 400px;
+  width: 100vw;
+  max-height: 100vh;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(33%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#menu li label
+{
+  cursor: pointer;
+}
+
+/*
+ * And let's slide it in
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: translate(-66%, 0);
+}
+
 /* header */
 
 .header-start {
@@ -200,6 +350,10 @@ h1,h2,h3,h4,h5,h6,p {
   background: var(--white);
 }
 
+.header-nav__list {
+  gap: 15%;
+}
+
 .header-list-link {
   font-weight: 400;
   font-size: 16px;
@@ -224,9 +378,9 @@ h1,h2,h3,h4,h5,h6,p {
   color: var(--dark-gold);
 }
 
-.header-list-item:not(:last-child) {
+/* .header-list-item:not(:last-child) {
   margin-right: 45px;
-}
+} */
 
 .header-btns-item:not(:last-child) {
   margin-right: 40px;
@@ -472,7 +626,11 @@ line-height: 200%;
 }
 
 .placement-item-descr {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 30px 45px 45px 45px;
+  min-height: max-content;
 }
 
 .placement-article-price-pre {
@@ -494,7 +652,14 @@ line-height: 200%;
 }
 
 .placement-price-rate {
+  flex-wrap: wrap;
+  gap: 5px;
   margin-bottom: 16px;
+}
+
+.placement-article {
+  display: flex;
+  flex-direction: column;
 }
 
 .placement-article-name {
@@ -504,7 +669,7 @@ line-height: 200%;
 }
 
 .placement-article-place {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
@@ -521,6 +686,10 @@ line-height: 200%;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.placement-btn {
+  max-width: fit-content;
 }
 
 .placement-last-item-link {
@@ -613,16 +782,22 @@ line-height: 200%;
   background-color: var(--white);
 }
 
+.contacts-left {
+  flex-direction: column;
+  margin-right: auto;
+  width: 33%;
+}
+
+.contacts-right {
+  width: 58%;
+}
+
 .contacts-list {
   margin-bottom: 50px;
 }
 
-.contacts-left {
-  width: 375px;
-}
-
 .contacts-item {
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   text-align: left;
   border-bottom: 1px solid #e9e9e9;
 }
@@ -635,15 +810,15 @@ line-height: 200%;
   padding-top: 25px;
 }
 
-.contacts-item-caption {
+.contacts-item-primary {
   margin-right: auto;
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
 }
 
-.contacts-item-text {
-  width: 230px;
+.contacts-item-secondary {
+  width: 67%;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
@@ -672,7 +847,7 @@ line-height: 200%;
 }
 
 .contacts-links {
-  width: 230px;
+  flex-direction: column;
 }
 
 .contacts-email-label {
@@ -682,24 +857,24 @@ line-height: 200%;
 }
 
 .contacts-btn {
+  max-width: max-content;
   padding: 27px 30px;
 }
 
 .contacts-img {
-  width: 100%;
   border-radius: 15px;
 }
 
 /* footer */
 
 .footer {
-  padding: 30px 0;
+  padding-top: 30px;
 }
 
 .footer__container {
   justify-content: space-between;
   padding: 45px;
-  border-radius: 15px;
+  border-radius: 15px 15px 0 0;
   background-color: #333333;
   background-image: url(/img/sun-footer.svg);
   background-repeat: no-repeat;

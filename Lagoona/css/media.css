@@ -1,0 +1,317 @@
+@media(max-width: 1200px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .btn {
+    padding: 10px;
+  }
+
+  .header-nav {
+    padding: 10px 40px;
+    font-size: 10px;
+  }
+
+  .header-nav__list {
+    gap: 15%;
+  }
+
+  .tour__container {
+    padding: 20px 0;
+  }
+
+  .footer__container {
+    padding: 10px;
+  }
+}
+
+@media(min-width: 994px) {
+  #menuToggle, #menu {
+    display: none;
+  }
+
+}
+
+@media(max-width: 993px) {
+  /* header */
+  .header-nav,
+  .personal-account {
+    display: none;
+  }
+
+  /* hamburger-menu */
+
+
+  /* other */
+
+  .about-descr {
+    padding-right: 0;
+  }
+  .form {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .services-item {
+    padding: 14% 1% 8% 1%;
+  }
+
+  .advantages-item-descr {
+    line-height: 120%;
+  }
+
+  .contacts-contentbox {
+    gap: 20px;
+  }
+
+  .footer-text {
+    font-size: 11px;
+  }
+}
+
+@media(max-width: 769px) {
+  .offer__title {
+    font-size: 30px;
+    line-height: normal;
+  }
+
+  .services-item-title-link {
+    font-size: 16px;
+  }
+
+  .services-item {
+    padding: 14% 1% 8% 1%;
+  }
+
+  .advantages-list {
+    gap: 16px;
+  }
+
+  .advantages-item {
+    width: calc((100% - 22px * 2) / 3);
+  }
+
+  .placement-item {
+    min-height: fit-content;
+  }
+
+  .placement-item-descr {
+    padding: 20px;
+  }
+
+  .last-placement-item {
+    padding: 20px;
+  }
+
+  .placement-last-item-link {
+    margin: 0;
+    text-align: center;
+  }
+
+  .form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .label-wrapper {
+    text-align: center;
+  }
+
+  .form-label {
+    font-size: 16px;
+    color: rgb(156, 156, 156);
+  }
+
+  .form-select {
+    text-align: center;
+  }
+
+  .form-date {
+    text-align: center;
+  }
+
+  .form-input {
+    border: none;
+  }
+
+  .label-wrapper {
+    width: 100%;
+    border-bottom: 1px solid rgb(226, 226, 226);
+  }
+
+  .form-btn {
+    width: 70%;
+  }
+
+  .contacts-item-primary {
+    font-size: 15px;
+  }
+
+  .contacts-item-secondary,
+  .contacts-item-secondary .regular-link,
+  .contacts-item-secondary .contacts-email-label {
+    font-size: 15px;
+  }
+
+  .footer__container {
+    padding: 20px;
+  }
+
+  .footer-info,
+  .footer-contacts {
+    margin-right: 0;
+  }
+}
+
+@media(max-width: 490px) {
+
+  .header-start {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 0;
+  }
+
+  .header-tel {
+    margin: 0;
+    font-size: 25px;
+  }
+
+  .section-offset {
+    padding-top: 30px;
+  }
+
+  .section-title {
+    text-align: center;
+  }
+
+  .offer__title {
+    font-size: 23px;
+  }
+
+  .services-item {
+    width: 100%;
+    padding: 0% 4% 12% 4%;
+  }
+
+  .advantages-item {
+    width: calc((100% - 22px) / 2);
+  }
+
+  .placement-item {
+      width: calc((100% - var(--gap)) / 2);
+  }
+
+  .contacts-right {
+    display: none;
+  }
+
+  .contacts-left {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+@media(max-width: 390px) {
+  .section-title {
+    font-size: 25px;
+    text-align: left;
+  }
+
+  #menuToggle {
+    top: 46px;
+    right: 8px;
+  }
+
+  .offer__content {
+    flex-direction: column;
+    gap: var(--gap);
+  }
+
+  .offer__block {
+    width: 100%;
+  }
+
+  .about-descr {
+    font-size: 15px;
+  }
+
+  .services-item {
+    padding: 29% 4% 4% 4%;
+    min-height: fit-content;
+  }
+
+  .services-item-title-link,
+  .services-item-descr,
+  .advantages-item-descr {
+    font-size: 14px;
+  }
+
+  .advantages-item {
+    display: flex;
+    align-items: center;
+    padding: 82px 7px 7px 7px;
+    min-height: fit-content;
+    width: 100%;
+    text-align: center;
+    background-position: left 69px  top 7px;
+  }
+
+  .placement-article-price-pre,
+  .placement-article-price-post,
+  .placement-article-name,
+  .placement-article-place {
+    font-size: 14px;
+  }
+
+  .placement-article-price-figure {
+    font-size: 15px;
+  }
+
+  .placement-price-rate,
+  .placement-article-name,
+  .placement-article-place {
+    margin-bottom: 0;
+  }
+
+  .placement-item-descr {
+    gap: 5px;
+  }
+
+  .placement-last-item-link {
+    font-size: 14px;
+  }
+
+  .last-placement-item {
+    width: 100%;
+    background-position: center top;
+  }
+
+  .contacts-item {
+    flex-direction: column;
+  }
+
+  .footer__container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-text {
+    margin-bottom: 5px;
+  }
+
+  .footer-info .regular-link {
+    font-size: 12px;
+  }
+
+  .footer-phone .regular-link,
+  .footer-mail .regular-link{
+    font-size: 15px;
+  }
+
+  .footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+}

@@ -7,7 +7,10 @@
     <title>Lagoona</title>
     <link rel="icon" href="img/favicon.png" type="image/png">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -22,6 +25,51 @@
                 <path class="account-svg" d="M10.59 1.41L14.17 5H0V7H14.17L10.58 10.59L12 12L18 6L12 0L10.59 1.41ZM19 0V12H21V0H19Z" fill="#CC9933"/>
                 </svg>
                 Личный кабинет</a>
+                <nav class="ham-nav" role="navigation">
+                  <div id="menuToggle">
+                    <input type="checkbox" id="menuCheckbox" />
+                    <span class="ham-line"></span>
+                    <span class="ham-line"></span>
+                    <span class="ham-line"></span>
+                    <ul id="menu">
+                      <li>
+                        <a href="#">
+                          <label for="menuCheckbox" onclick="this.parentNode.click();">Предложения</label>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#about">
+                          <label for="menuCheckbox" onclick="this.parentNode.click();">О нас</label>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#about">
+                          <label for="menuCheckbox" onclick="this.parentNode.click();">Услуги</label>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#about">
+                          <label for="menuCheckbox" onclick="this.parentNode.click();">Преимущества</label>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#about">
+                          <label for="menuCheckbox" onclick="this.parentNode.click();">Размещение</label>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#about">
+                          <label for="menuCheckbox" onclick="this.parentNode.click();">Хочу тур!</label>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#about">
+                          <label for="menuCheckbox" onclick="this.parentNode.click();">Контакты</label>
+                        </a>
+                      </li>
+                    </ul>
+                </div>
+              </nav>
             </div>
             <nav class="header-nav flex">
                 <ul class="list-reset header-nav__list flex">
@@ -180,9 +228,9 @@
                 <ul class="list-reset placement-list flex">
                     <li class="placement-item">
                                 <article class="placement-article">
-                                  <img class="placment-artice-cover" src="/img/plc-1.jpg" alt="Лагуна Эспаньола">
-                                  <div class="placement-item-descr">
-                                    <p class="placement-price-rate">
+                                  <img class="placment-artice-cover" src="img/plc-1.jpg" alt="Лагуна Эспаньола">
+                                  <div class="placement-item-descr flex">
+                                    <p class="placement-price-rate flex">
                                       <span class="placement-price placement-article-price-pre">от</span>
                                       <span class="placement-price placement-article-price-figure">4&nbsp;698&nbsp;&#8381;</span>
                                       <span class="placement-price placement-article-price-post">/ночь</span>
@@ -202,9 +250,9 @@
                     </li>
                     <li class="placement-item">
                                 <article class="placement-article">
-                                  <img class="placment-artice-cover" src="/img/plc-2.jpg" alt="Лагуна Сон Типикас">
-                                  <div class="placement-item-descr">
-                                    <p class="placement-price-rate">
+                                  <img class="placment-artice-cover" src="img/plc-2.jpg" alt="Лагуна Сон Типикас">
+                                  <div class="placement-item-descr flex">
+                                    <p class="placement-price-rate flex">
                                       <span class="placement-price placement-article-price-pre">от</span>
                                       <span class="placement-price placement-article-price-figure">5&nbsp;148&nbsp;&#8381;</span>
                                       <span class="placement-price placement-article-price-post">/ночь</span>
@@ -224,9 +272,9 @@
                     </li>
                     <li class="placement-item">
                                 <article class="placement-article">
-                                  <img class="placment-artice-cover" src="/img/plc-3.jpg" alt="Лагуна Де Ля Герра">
-                                  <div class="placement-item-descr">
-                                    <p class="placement-price-rate">
+                                  <img class="placment-artice-cover" src="img/plc-3.jpg" alt="Лагуна Де Ля Герра">
+                                  <div class="placement-item-descr flex">
+                                    <p class="placement-price-rate flex">
                                       <span class="placement-price placement-article-price-pre">от</span>
                                       <span class="placement-price placement-article-price-figure">6&nbsp;254&nbsp;&#8381;</span>
                                       <span class="placement-price placement-article-price-post">/ночь</span>
@@ -246,9 +294,9 @@
                     </li>
                     <li class="placement-item">
                                 <article class="placement-article">
-                                  <img class="placment-artice-cover" src="/img/plc-4.jpg" alt="Лагуна Ментира Пиадоза">
-                                  <div class="placement-item-descr">
-                                    <p class="placement-price-rate">
+                                  <img class="placment-artice-cover" src="img/plc-4.jpg" alt="Лагуна Ментира Пиадоза">
+                                  <div class="placement-item-descr flex">
+                                    <p class="placement-price-rate flex">
                                       <span class="placemnt-price">
                                       <span class="placement-price placement-article-price-pre">от</span>
                                       <span class="placement-price placement-article-price-figure">6&nbsp;320&nbsp;&#8381;</span>
@@ -271,9 +319,9 @@
                     </li>
                     <li class="placement-item">
                                 <article class="placement-article">
-                                  <img class="placment-artice-cover" src="/img/plc-5.jpg" alt="Лагуна Эмпухар Ля Креативидад">
-                                  <div class="placement-item-descr">
-                                    <p class="placement-price-rate">
+                                  <img class="placment-artice-cover" src="img/plc-5.jpg" alt="Лагуна Эмпухар Ля Креативидад">
+                                  <div class="placement-item-descr flex">
+                                    <p class="placement-price-rate flex">
                                         <span class="placemnt-price">
                                         <span class="placement-price placement-article-price-pre">от</span>
                                         <span class="placement-price placement-article-price-figure">6&nbsp;457&nbsp;&#8381;</span>
@@ -295,9 +343,9 @@
                     </li>
                     <li class="placement-item">
                                 <article class="placement-article">
-                                  <img class="placment-artice-cover" src="/img/plc-6.jpg" alt="Лагуна Эль Реторно">
-                                  <div class="placement-item-descr">
-                                    <p class="placement-price-rate">
+                                  <img class="placment-artice-cover" src="img/plc-6.jpg" alt="Лагуна Эль Реторно">
+                                  <div class="placement-item-descr flex">
+                                    <p class="placement-price-rate flex">
                                       <span class="placement-price placement-article-price-pre">от</span>
                                       <span class="placement-price placement-article-price-figure">6&nbsp;320&nbsp;&#8381;</span>
                                       <span class="placement-price placement-article-price-post">/ночь</span>
@@ -318,9 +366,9 @@
                     </li>
                     <li class="placement-item">
                                 <article class="placement-article">
-                                  <img class="placment-artice-cover" src="/img/plc-7.jpg" alt="Лагуна Ментира Пиадоза">
-                                  <div class="placement-item-descr">
-                                    <p class="placement-price-rate">
+                                  <img class="placment-artice-cover" src="img/plc-7.jpg" alt="Лагуна Ментира Пиадоза">
+                                  <div class="placement-item-descr flex">
+                                    <p class="placement-price-rate flex">
                                       <span class="placement-price placement-article-price-pre">от</span>
                                       <span class="placement-price placement-article-price-figure">6&nbsp;505&nbsp;&#8381;</span>
                                       <span class="placement-price placement-article-price-post">/ночь</span>
@@ -341,9 +389,9 @@
                     </li>
                     <li class="placement-item">
                                 <article class="placement-article">
-                                  <img class="placment-artice-cover" src="/img/plc-8.jpg" alt="Лагуна суерте сиджуио сьемпре">
+                                  <img class="placment-artice-cover" src="img/plc-8.jpg" alt="Лагуна суерте сиджуио сьемпре">
                                   <div class="placement-item-descr">
-                                    <p class="placement-price-rate">
+                                    <p class="placement-price-rate flex">
                                       <span class="placement-price placement-article-price-pre">от</span>
                                       <span class="placement-price placement-article-price-figure">6&nbsp;824&nbsp;&#8381;</span>
                                       <span class="placement-price placement-article-price-post">/ночь</span>
@@ -404,7 +452,7 @@
                   </label>
                   <label class="label-wrapper">
                     <span class="form-label">Дата прибытия</span>
-                    <input class="form-reset" type="date" name="date" >
+                    <input class="form-reset form-date" type="date" name="date" >
                   </label>
                   <label class="label-wrapper">
                     <span class="form-label">Ночей</span>
@@ -414,7 +462,7 @@
                     <span class="form-label">Туристы</span>
                     <input class="form-reset form-input" type="number" name="people" min="1" max="6" required>
                   </label>
-                  <button class="btn-reset btn" type="submit">Найти</button>
+                  <button class="btn-reset btn form-btn" type="submit">Найти</button>
                 </form>
             </div>
         </section>
@@ -424,36 +472,36 @@
                     Контакты
                 </h2>
                 <div class="flex contacts-contentbox">
-                  <div class="contacts-left">
+                  <div class="contacts-left flex">
                     <ul class="list-reset contacts-list">
-                      <li class="flex contacts-item">
-                        <strong class="contacts-item-caption">Адрес</strong>
-                        <span class="contacts-item-text">Москва, улица Юности, дом 5&nbsp;строение&nbsp;4, офис&nbsp;2</span>
+                      <li class="flex contacts-item flex">
+                        <strong class="contacts-item-primary flex">Адрес</strong>
+                        <span class="contacts-item-text contacts-item-secondary flex">Москва, улица Юности, дом 5&nbsp;строение&nbsp;4, офис&nbsp;2</span>
                       </li>
-                      <li class="flex contacts-item">
-                        <strong class="contacts-item-caption">Телефоны</strong>
-                        <div class="contacts-links">
+                      <li class="flex contacts-item flex">
+                        <strong class="contacts-item-primary flex">Телефоны</strong>
+                        <div class="contacts-links contacts-item-secondary flex">
                           <a href="tel:+74995356434" class="regular-link">+7&nbsp;499 535-64-34</a>
                           <a href="tel:+74950050544" class="regular-link">+7&nbsp;495 005-05-44</a>
                         </div>
                       </li>
-                      <li class="flex contacts-item">
-                        <strong class="contacts-item-caption">Email</strong>
-                        <div class="contacts-links">
+                      <li class="flex contacts-item flex">
+                        <strong class="contacts-item-primary flex">Email</strong>
+                        <div class="contacts-links contacts-item-secondary flex">
                           <a href="mailto:lg.oona@mail.ru" class="regular-link">lg.oona@mail.ru</a>
                           <span class="contacts-email-label">по&nbsp;вопросам бронирования</span>
                           <a href="mailto:hotels.ln@mail.ru" class="regular-link">hotels.ln@mail.ru</a>
                           <span class="contacts-email-label">по&nbsp;вопросам сотрудничества</span>
                         </div>
                       </li>
-                      <li class="flex contacts-item">
-                        <strong class="contacts-item-caption">График</strong>
-                        <span class="contacts-item-text">Понедельник-пятница, с&nbsp;10:00 до&nbsp;19:00</span>
+                      <li class="flex contacts-item flex">
+                        <strong class="contacts-item-primary flex">График</strong>
+                        <span class="contacts-item-text contacts-item-secondary flex">Понедельник-пятница, с&nbsp;10:00 до&nbsp;19:00</span>
                       </li>
                     </ul>
                     <button class="btn-reset btn contacts-btn">Построить маршрут</button>
                   </div>
-                  <div class="contacts-right">
+                  <div class="contacts-right flex">
                     <img class="contacts-img" src="img/lagoona-office.jpg" alt="Офис Лагуна Хотелс">
                   </div>
                 </div>
@@ -462,7 +510,7 @@
     </main>
 
     <footer class="footer">
-        <div class="container footer__container flex">
+        <div class="container footer__container flex row">
           <div class="footer-block footer-info">
             <p class="footer-text">© 2012–2020 Управляющая компания Объединённой сети «Лагуна Хотелс»</p>
             <p class="footer-text">Представленная на сайте информация носит справочный характер и не является публичной офертой</p>

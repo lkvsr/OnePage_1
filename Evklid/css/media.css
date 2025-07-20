@@ -644,3 +644,13 @@ padding-top: 30px;
 }
 
 }
+
+@media(max-width:320px) {
+  .btn-group-wrapper {
+    justify-content: center;
+  }
+
+  .btn-group-wrapper .btn {
+    width: 100%;
+  }
+}
