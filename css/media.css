@@ -1,0 +1,23 @@
+@media(min-width: 920px) and (max-width: 1440px){
+  .container {
+  padding: 50px;
+}
+}
+
+@media(max-width: 920px) {
+  .container {
+    padding: 20px;
+  }
+}
+
+@media(max-width: 520px) {
+  .nav__list {
+    /* flex-direction: column; */
+    gap: 2px;
+    font-size: .9em;
+  }
+
+  .nav__link {
+    padding: 5px;
+  }
+}
